@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/style.css" />
+  <script async src="js/main.js"></script>
+</head>
+
+<body class="bg-secondary">
+  <header>
+    <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./img/Logo.png" alt="m+ academy logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donjons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Coachs</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Mon guide..." aria-label="Search" />
+            <button class="btn btn-outline-warning" type="submit">Rechercher</button>
+          </form>
+        </div>
+
+        <a class="d-flex justify-content-center" href="#"><img class="w-50" src="./img/User.png" alt="user icon"></a>
+      </div>
+    </nav>
+    <img class="w-100" src="./img/Bandeau.png" alt="bandeau illustration de trois classes m+ academy">
+  </header>
+
+  <main class="container w-lg-75 d-flex flex-column align-items-center">
+
+    <section class="container d-flex flex-column my-3 py-3 bg-primary rounded">
+      <h2 class="text-center text-light">Trending</h2>
+
+      <div class="row justify-content-around">
+
+        <div class="card bg-secondary py-2 my-2 col-10 col-lg-3">
+          <img src="./img/Dwarf-shaman-portrait-1 1.png" class="card-img-top w-100" alt="illustration de chaman nain">
+          <div class="card-body text-light">
+            <h5>Last update:</h5>
+            <p class="card-text">Les derniers changements du moine pour le prochain patch sont annoncés ! <br><a
+                class="text-warning" href="#">En savoir plus...</a></p>
+          </div>
+        </div>
+        <div class="card bg-secondary py-2 my-2 col-10 col-lg-3">
+          <img src="./img/priest 1.png" class="card-img-top w-100" alt="illustration de prêtre Humaine">
+          <div class="card-body text-light">
+            <h5>Mandatory Maystine</h5>
+            <p class="card-text">L'interview exclusive de Maystine pour la M+ academy est là !<br><a
+                class="text-warning" href="#">Découvrir...</a></p>
+          </div>
+        </div>
+        <div class="card bg-secondary py-2 my-2 col-10 col-lg-3">
+          <img src="./img/monk 1.png" class="card-img-top w-100" alt="illustration de moine Pandaren">
+          <div class="card-body text-light">
+            <h5>Last update:</h5>
+            <p class="card-text">Les derniers changements du moine pour le prochain patch sont annoncés ! <br><a
+                class="text-warning" href="#">En savoir plus...</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container row justify-content-center bg-primary rounded my-3 py-3">
+      <div id="homeCoach" class="col-sm-10 col-lg-4 row justify-content-center">
+        <h2 class="text-center text-light">Coachs</h2>
+        <div class="card mb-3 bg-secondary text-light col-sm-10">
+          <div class="row g-0">
+            <div class="col-6 align-self-center">
+              <img src="img/image 2.png" class="img-fluid" alt="photo de profil de Sendri">
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <h5 class="card-title">Sendri</h5>
+                <p class="card-text">Voleur <br>Toutes spés</p>
+                <p class="card-text">* * * * *</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-secondary text-light col-sm-10">
+          <div class="row g-0">
+            <div class="col-6 align-self-center">
+              <img src="img/image 1.png" class="w-100" alt="photo de profil de Slogor">
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <h5 class="card-title">Slogor</h5>
+                <p class="card-text">DK <br> Sang, Impie</p>
+                <p class="card-text">* * * * *</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="homeGuide" class="col-sm-11 col-lg-7 row mt-5 mt-lg-0">
+        <h2 class="text-center text-light">Guides</h2>
+        <div class="text-light">
+          <img src="img/Cinderbrew_Meadery_loading_screen 1.png"
+            class="w-50 float-start position-relative me-3 pt-2 pt-lg-1" alt="loading screen hydromellerie">
+          <p>Bienvenue dans le guide mythique + de l'Hydromellerie Brassecendre pour <a href="#"><strong
+                class="paladin">paladin retribution</strong></a> ! Ce guide détaille tout ce qu’il faut savoir pour...
+          </p>
+          <p class="text-end"><small class="text-light text-opacity-50">Ecrit par Radna</small></p>
+        </div>
+
+        <div class="text-light">
+          <img src="img/1200px-Priory_of_the_Sacred_Flame_loading_screen 1.png"
+            class="w-50 float-start position-relative me-3 pt-2 pt-lg-1" alt="loading screen hydromellerie">
+          <p>Bienvenue dans le guide mythique + du Prieuré de la Flamme Sacrée pour <a href="#"><strong
+                class="rogue">Voleur Assassinat</strong></a> ! Ce guide détaille tout ce qu’il faut savoir pour...
+          </p>
+          <p class="text-end"><small class="text-light text-opacity-50">Ecrit par Sendri</small></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="row container-fluid align-items-center m-2 ">
+    <div class="col-3 d-flex justify-content-center">
+      <a href="#"><img class="img-fluid" src="img/discord-white-icon 1.png" alt="discord link icon"></a>
+      <a href="#"><img class="img-fluid" src="img/x-white-icon 1.png" alt="x link icon"></a>
+    </div>
+    <div class="col-3 d-flex justify-content-center">
+      <a href="#"><small class="text-light text-opacity-50">Contact</small></a>
+    </div>
+    <div class="col-3 d-flex justify-content-center">
+      <a href="#"><small class="text-light text-opacity-50">Mentions Légales</small></a>
+    </div>
+    <div class="col-3 d-flex justify-content-center">
+      <a href="#"><strong class="text-light">Join us</strong></a>
+    </div>
+  </footer>
+
+
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

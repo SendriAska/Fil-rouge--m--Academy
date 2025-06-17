@@ -1,0 +1,67 @@
+// Bootstrap
+
+// Variable overrides 
+$primary: #171717;
+$secondary :#000000;
+$light:#EFEFEF;
+$warning :#FFCA2C;
+$enable-shadows: true;
+$enable-margin-negative : true;
+$prefix: "mo-";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Own CSS
+
+.paladin {
+    color: #F486B0;
+}
+
+.rogue {
+    color: #FFF468;
+}
+
+.warlock {
+    color: #614EB1;
+}
+
+.deathknight {
+    color: #C21E38;
+}
+
+.druid {
+    color: #E66C0C;
+}
+
+.hunt {
+    color: #6B8F42;
+}
+
+.shaman {
+    color: #0863D3;
+}
+
+.demonHunter {
+    color: #9F2CA6;
+}
+
+.monk {
+    color: #04D95A;
+}
+
+.evoker {
+    color: #1E3F4F;
+}
+
+.priest {
+    color: #D4D6CF;
+}
+
+.warrior {
+    color: #BA8550;
+}
+
+.mage {
+    color: #36B0E1;
+}
