@@ -12,8 +12,9 @@ $prefix: "mo-";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
-// Own CSS
+// OWN CSS //
 
+// CLASS COLOR
 .paladin {
     color: #F486B0;
 }
@@ -64,4 +65,8 @@ $prefix: "mo-";
 
 .mage {
     color: #36B0E1;
+}
+
+.filter  {
+    margin: 0 2px;
 }

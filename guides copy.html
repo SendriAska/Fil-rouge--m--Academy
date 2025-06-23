@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+    <script async src="./js/main.js"></script>
+</head>
+
+<body class="bg-secondary">
+    <header>
+        <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/Logo.png" alt="m+ academy logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./guides.html">Donjons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coachs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Mon guide..." aria-label="Search" />
+                        <button class="btn btn-outline-warning" type="submit">Rechercher</button>
+                    </form>
+                </div>
+
+                <a class="d-flex justify-content-center" href="#"><img class="w-50" src="./img/User.png"
+                        alt="user icon"></a>
+            </div>
+        </nav>
+        <img class="w-100" src="./img/Bandeau.png" alt="bandeau illustration de trois classes m+ academy">
+    </header>
+
+    <main class="container w-lg-75 d-flex flex-column align-items-center">
+
+        <!-- Accordéon Filtre Classe -->
+        <section class="container rounded accordion accordion-flush p-3">
+            <div class="accordion-item bg-secondary">
+
+                <!-- Accordéon Classe -->
+                <div class="accordion-header bg-primary rounded p-3">
+
+                    <!-- Paladin -->
+                    <button id="palaClass" class="rounded paladin bg-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#palaSpec" aria-expanded="true" aria-controls="palaSpec">Paladin</button>
+                    <!-- Démoniste -->
+                    <button id="warlockClass" class="rounded warlock bg-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#warlockSpec" aria-expanded="true"
+                        aria-controls="warlockSpec">Démoniste</button>
+                </div>
+
+
+                <!-- Accordéon Paladin Spé -->
+                <div id="palaSpec" class="accordion accordion-flush accordion-collapse collapse"
+                    data-bs-parent="#palaClass">
+                    <div class="accordion-item bg-secondary">
+                        <div class="accordion-header bg-primary rounded d-flex justify-content-evenly p-3 m-3">
+                            <button id="palaRet" class="bg-primary paladin rounded" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#palaRetGuide" aria-expanded="false"
+                                aria-controls="palaRetGuide">Rétribution</button>
+                            <button id="palaSac" class="bg-primary paladin rounded" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#palaSacGuide" aria-expanded="false"
+                                aria-controls="palaSacGuide">Sacré</button>
+                            <button id="palaProt" class="bg-primary paladin rounded" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#palaProtGuide" aria-expanded="false"
+                                aria-controls="palaProtGuide">Protection</button>
+                        </div>
+
+                        <!-- Accordéon Paladin RET -->
+                        <div id="palaRetGuide" class="accordion-collapse collapse row justify-content-center"
+                            data-bs-parent="palaRet">
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Priory_of_the_Sacred_Flame_loading_screen.jpg"
+                                    alt="loading screen du Prieuré"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/operation-vannes-ouvertes.jpg"
+                                    alt="loading screen de Vannes Ouvertes"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/The_Rookery_loading_screen.jpg"
+                                    alt="loading screen de Rookery"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Theater_of_Pain (1).png"
+                                    alt="loading screen du Theatre de la Souffrance"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Cinderbrew_Meadery_loading_screen.jpg"
+                                    alt="loading screen de l'Hydromellerie"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Darkflame_Cleft_loading_screen.jpg"
+                                    alt="loading screen de Flamme Noire"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Motherlode_loading_screen.jpg"
+                                    alt="loading screen de FILON"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Mechagon_loading_screen.jpg"
+                                    alt="loading screen de Mechagon"></a>
+                        </div>
+
+                        <!-- Accordéon Paladin Sacré -->
+                        <div id="palaSacGuide" class="accordion-collapse collapse row justify-content-center"
+                            data-bs-parent="palaSac">
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Priory_of_the_Sacred_Flame_loading_screen.jpg"
+                                    alt="loading screen du Prieuré"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/operation-vannes-ouvertes.jpg"
+                                    alt="loading screen de Vannes Ouvertes"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/The_Rookery_loading_screen.jpg"
+                                    alt="loading screen de Rookery"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Theater_of_Pain (1).png"
+                                    alt="loading screen du Theatre de la Souffrance"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Cinderbrew_Meadery_loading_screen.jpg"
+                                    alt="loading screen de l'Hydromellerie"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Darkflame_Cleft_loading_screen.jpg"
+                                    alt="loading screen de Flamme Noire"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Motherlode_loading_screen.jpg"
+                                    alt="loading screen de FILON"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Mechagon_loading_screen.jpg"
+                                    alt="loading screen de Mechagon"></a>
+                        </div>
+                        
+                        <!-- Accordéon Paladin Protection -->
+                        <div id="palaProtGuide" class="accordion-collapse collapse row justify-content-center"
+                            data-bs-parent="palaProt">
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Priory_of_the_Sacred_Flame_loading_screen.jpg"
+                                    alt="loading screen du Prieuré"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/operation-vannes-ouvertes.jpg"
+                                    alt="loading screen de Vannes Ouvertes"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/The_Rookery_loading_screen.jpg"
+                                    alt="loading screen de Rookery"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Theater_of_Pain (1).png"
+                                    alt="loading screen du Theatre de la Souffrance"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Cinderbrew_Meadery_loading_screen.jpg"
+                                    alt="loading screen de l'Hydromellerie"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Darkflame_Cleft_loading_screen.jpg"
+                                    alt="loading screen de Flamme Noire"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Motherlode_loading_screen.jpg"
+                                    alt="loading screen de FILON"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Mechagon_loading_screen.jpg"
+                                    alt="loading screen de Mechagon"></a>
+                    </div>
+                    
+                </div>
+
+                 <!-- Accordéon Warlock Spé -->
+                <div id="warlockSpec" class="accordion accordion-flush accordion-collapse collapse"
+                    data-bs-parent="#warlockClass">
+                    <div class="accordion-item bg-secondary">
+                        <div class="accordion-header bg-primary rounded d-flex justify-content-evenly p-3 m-3">
+                            <button id="warlockAffli" class="bg-primary warlock rounded" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#warlockAffliGuide" aria-expanded="false"
+                                aria-controls="warlockAffliGuide">Affliction</button>
+                            <button id="warlockDestro" class="bg-primary warlock rounded" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#warlockDestroGuide" aria-expanded="false"
+                                aria-controls="warlockDestroGuide">Destruction</button>
+                            <button id="warlockDemono" class="bg-primary warlock rounded" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#warlockDemonoGuide" aria-expanded="false"
+                                aria-controls="warlockDemonoGuide">Démonologie</button>
+                        </div>
+
+                        <!-- Accordéon Warlock AFFLI -->
+                        <div id="palaRetGuide" class="accordion-collapse collapse row justify-content-center"
+                            data-bs-parent="palaRet">
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Priory_of_the_Sacred_Flame_loading_screen.jpg"
+                                    alt="loading screen du Prieuré"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/operation-vannes-ouvertes.jpg"
+                                    alt="loading screen de Vannes Ouvertes"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/The_Rookery_loading_screen.jpg"
+                                    alt="loading screen de Rookery"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Theater_of_Pain (1).png"
+                                    alt="loading screen du Theatre de la Souffrance"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Cinderbrew_Meadery_loading_screen.jpg"
+                                    alt="loading screen de l'Hydromellerie"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Darkflame_Cleft_loading_screen.jpg"
+                                    alt="loading screen de Flamme Noire"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Motherlode_loading_screen.jpg"
+                                    alt="loading screen de FILON"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Mechagon_loading_screen.jpg"
+                                    alt="loading screen de Mechagon"></a>
+                        </div>
+
+                        <!-- Accordéon Paladin Sacré -->
+                        <div id="palaSacGuide" class="accordion-collapse collapse row justify-content-center"
+                            data-bs-parent="palaSac">
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Priory_of_the_Sacred_Flame_loading_screen.jpg"
+                                    alt="loading screen du Prieuré"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/operation-vannes-ouvertes.jpg"
+                                    alt="loading screen de Vannes Ouvertes"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/The_Rookery_loading_screen.jpg"
+                                    alt="loading screen de Rookery"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Theater_of_Pain (1).png"
+                                    alt="loading screen du Theatre de la Souffrance"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Cinderbrew_Meadery_loading_screen.jpg"
+                                    alt="loading screen de l'Hydromellerie"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Darkflame_Cleft_loading_screen.jpg"
+                                    alt="loading screen de Flamme Noire"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Motherlode_loading_screen.jpg"
+                                    alt="loading screen de FILON"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Mechagon_loading_screen.jpg"
+                                    alt="loading screen de Mechagon"></a>
+                        </div>
+                        
+                        <!-- Accordéon Paladin Protection -->
+                        <div id="palaProtGuide" class="accordion-collapse collapse row justify-content-center"
+                            data-bs-parent="palaProt">
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Priory_of_the_Sacred_Flame_loading_screen.jpg"
+                                    alt="loading screen du Prieuré"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/operation-vannes-ouvertes.jpg"
+                                    alt="loading screen de Vannes Ouvertes"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/The_Rookery_loading_screen.jpg"
+                                    alt="loading screen de Rookery"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Theater_of_Pain (1).png"
+                                    alt="loading screen du Theatre de la Souffrance"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded"
+                                    src="./img/Cinderbrew_Meadery_loading_screen.jpg"
+                                    alt="loading screen de l'Hydromellerie"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Darkflame_Cleft_loading_screen.jpg"
+                                    alt="loading screen de Flamme Noire"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Motherlode_loading_screen.jpg"
+                                    alt="loading screen de FILON"></a>
+                            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1"
+                                href="#"><img class="img-fluid rounded" src="./img/Mechagon_loading_screen.jpg"
+                                    alt="loading screen de Mechagon"></a>
+                    </div>
+                </div>
+
+               
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="row container-fluid align-items-center m-2 ">
+        <div class="col-3 d-flex justify-content-center">
+            <a href="#"><img class="img-fluid" src="img/discord-white-icon 1.png" alt="discord link icon"></a>
+            <a href="#"><img class="img-fluid" src="img/x-white-icon 1.png" alt="x link icon"></a>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <a href="#"><small class="text-light text-opacity-50">Contact</small></a>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <a href="#"><small class="text-light text-opacity-50">Mentions Légales</small></a>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <a href="#"><strong class="text-light">Join us</strong></a>
+        </div>
+    </footer>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
