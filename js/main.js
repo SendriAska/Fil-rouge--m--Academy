@@ -15,10 +15,7 @@ const warriorGuide = document.getElementById("warriorGuideFilter");
 const mageGuide = document.getElementById("mageGuideFilter");
 const rogueGuide = document.getElementById("rogueGuideFilter");
 
-const specGuide = document.getElementById("guideSpec");
-const specContainer = document.getElementById("specContainer");
 
-let specShow = false;
 
 // function showPalaSpec () {
 
@@ -38,22 +35,53 @@ let specShow = false;
 
 // }
 
+const specGuide = document.getElementById("guideSpec");
+const specContainer = document.getElementById("specContainer");
+
+let specShow = false;
+
 palaGuide.addEventListener("click", () => {
-    if (!specShow) {
+    
+    
+    
+     if (!specShow) {
+
         // Création dynamique des spécialisations
         const specs = ["Sacré", "Protection", "Vindicte"];
 
         specs.forEach(nom => {
             const btn = document.createElement("button");
             btn.textContent = nom;
-            btn.className = ("paladin rounded bg-primary specPalaFilter px-5 mx-2");
+            btn.className = ("paladin rounded bg-primary specFilter specPalaFilter px-5 mx-2");
+            specContainer.appendChild(btn);
+
+        });
+
+        specShow = true;
+    } else {
+        // Suppression des boutons créés
+        const specButtons = document.querySelectorAll(".specFilter");
+        specButtons.forEach(btn => btn.remove());
+        specShow = false;
+    }
+});
+
+warlockGuide.addEventListener("click", () => {
+    if (!specShow) {
+        // Création dynamique des spécialisations
+        const specs = ["Affliction", "Demonologie", "Destruction"];
+
+        specs.forEach(nom => {
+            const btn = document.createElement("button");
+            btn.textContent = nom;
+            btn.className = ("warlock rounded bg-primary specFilter specWarlockFilter px-5 mx-2");
             specContainer.appendChild(btn);
         });
 
         specShow = true;
     } else {
         // Suppression des boutons créés
-        const specButtons = document.querySelectorAll(".specPalaFilter");
+        const specButtons = document.querySelectorAll(".specFilter");
         specButtons.forEach(btn => btn.remove());
         specShow = false;
     }
