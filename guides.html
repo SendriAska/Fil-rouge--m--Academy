@@ -45,25 +45,63 @@
 
     <main class="container w-lg-75 d-flex flex-column align-items-center">
         <!--Filtre Classe -->
-        <section class="col-12 mt-5 p-2 rounded bg-primary container-fluid">
+        <section class="col-12 mt-5 p-2 rounded bg-primary container-fluid" id="classContainer">
             <input type="button" value="Paladin" class="filter paladin rounded bg-primary" id="palaGuideFilter">
             <input type="button" value="Démoniste" class="filter warlock rounded bg-primary" id="warlockGuideFilter">
-            <input type="button" value="Chevalier de la mort" class="filter deathknight rounded bg-primary" id="deathknightGuideFilter">
+            <input type="button" value="Chevalier de la mort" class="filter deathknight rounded bg-primary"
+                id="deathknightGuideFilter">
             <input type="button" value="Druide" class="filter druid rounded bg-primary" id="druidGuideFilter">
             <input type="button" value="Chasseur" class="filter hunt rounded bg-primary" id="huntGuideFilter">
             <input type="button" value="Chaman" class="filter shaman rounded bg-primary" id="shamanGuideFilter">
             <input type="button" value="Voleur" class="filter rogue rounded bg-primary" id="rogueGuideFilter">
-            <input type="button" value="Chasseur de démon" class="filter demonHunter rounded bg-primary" id="demonHunterGuideFilter">
+            <input type="button" value="Chasseur de démon" class="filter demonHunter rounded bg-primary"
+                id="demonHunterGuideFilter">
             <input type="button" value="Evoker" class="filter evoker rounded bg-primary" id="evokerGuideFilter">
             <input type="button" value="Moine" class="filter monk rounded bg-primary" id="monkGuideFilter">
             <input type="button" value="Prêtre" class="filter priest rounded bg-primary" id="priestGuideFilter">
             <input type="button" value="Guerrier" class="filter warrior rounded bg-primary" id="warriorGuideFilter">
             <input type="button" value="Mage" class="filter mage rounded bg-primary" id="mageGuideFilter">
         </section>
-        <section id="guideSpec row flex-column">
-            <div class="mt-5 d-flex justify-content-between" id="specContainer"></div>
+
+
+        <section id="guideSpec" class="row flex-column">
+            <div class="mt-5 d-flex justify-content-between" id="specContainer">
+                <input type="button" id="firstButton" value="">
+                <input type="button" id="secondButton" value="">
+                <input type="button" id="thirdButton" value="">
+                <input type="button" id="fourthButton" value="">
+            </div>
         </section>
-        
+
+
+
+        <section id="listDungeons" class="row">
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/Priory_of_the_Sacred_Flame_loading_screen.jpg"
+                    alt="loading screen du Prieuré"></a>
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/operation-vannes-ouvertes.jpg"
+                    alt="loading screen de Vannes Ouvertes"></a>
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/The_Rookery_loading_screen.jpg"
+                    alt="loading screen de Rookery"></a>
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/Theater_of_Pain (1).png"
+                    alt="loading screen du Theatre de la Souffrance"></a>
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/Cinderbrew_Meadery_loading_screen.jpg"
+                    alt="loading screen de l'Hydromellerie"></a>
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/Darkflame_Cleft_loading_screen.jpg"
+                    alt="loading screen de Flamme Noire"></a>
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/Motherlode_loading_screen.jpg"
+                    alt="loading screen de FILON"></a>
+            <a class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-1" href="#"><img
+                    class="img-fluid rounded" src="./img/Mechagon_loading_screen.jpg"
+                    alt="loading screen de Mechagon"></a>
+        </section>
+
 
 
 
@@ -72,8 +110,10 @@
 
     <footer class="row container-fluid align-items-center m-2 ">
         <div class="col-3 d-flex justify-content-center">
-            <a href="#"><img class="img-fluid" src="img/discord-white-icon 1.png" alt="discord link icon"></a>
-            <a href="#"><img class="img-fluid" src="img/x-white-icon 1.png" alt="x link icon"></a>
+            <a href="#" class="mx-2"><img class="img-fluid" src="img/Platform=Discord, Color=Negative.png"
+                    alt="discord link icon"></a>
+            <a href="#" class="mx-2"><img class="img-fluid" src="img/Platform=X (Twitter), Color=Negative.png"
+                    alt="x link icon"></a>
         </div>
         <div class="col-3 d-flex justify-content-center">
             <a href="#"><small class="text-light text-opacity-50">Contact</small></a>
