@@ -12061,5 +12061,16 @@ textarea.form-control-lg {
 }
 
 .filter {
-  margin: 0 2px;
+  margin: 2px 2px;
+}
+
+.guideCard {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.guideCard.show {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */
