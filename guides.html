@@ -12,7 +12,7 @@
 <body class="bg-secondary">
     <header>
         <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
-            <div class="container-fluid">
+            <div class="container-fluid justify-content-around">
                 <a class="navbar-brand" href="./index.html"><img src="./img/Logo.png" alt="m+ academy logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +43,10 @@
         <img class="w-100" src="./img/Bandeau.png" alt="bandeau illustration de trois classes m+ academy">
     </header>
 
-    <main class="container w-lg-75 d-flex flex-column align-items-center mt-3 bg-primary">
+    <main class="container w-lg-75 d-flex flex-column align-items-center mt-3 bg-primary rounded">
         <!--Filtre Classe -->
-        <section class="col-12 mt-5 p-2 rounded container-fluid d-flex flex-wrap justify-content-center" id="classContainer">
-            <h2 class="text-center text-light col-12">Choisissez votre classe</h2>
+        <section class="col-12 mt-5 p-2 rounded container-fluid d-flex flex-wrap justify-content-center bg-secondary" id="classContainer">
+            <h2 class="text-center col-12">Choisissez votre classe</h2>
 
             <input type="button" value="Paladin" class="filter paladin rounded bg-primary m-2" id="palaGuideFilter">
             <input type="button" value="Démoniste" class="filter warlock rounded bg-primary m-2" id="warlockGuideFilter">
@@ -66,7 +66,7 @@
         </section>
 
         <section id="guideSpec" class="row flex-column">
-            <div class="my-3 py-2 justify-content-between rounded bg-primary" id="specContainer">
+            <div class="my-3 justify-content-between" id="specContainer">
                 
             </div>
         </section>
@@ -78,19 +78,17 @@
     </main>
 
     <footer class="row container-fluid align-items-center m-2 ">
-        <div class="col-3 d-flex justify-content-center">
-            <a href="#" class="mx-2"><img class="img-fluid" src="img/Platform=Discord, Color=Negative.png"
-                    alt="discord link icon"></a>
-            <a href="#" class="mx-2"><img class="img-fluid" src="img/Platform=X (Twitter), Color=Negative.png"
-                    alt="x link icon"></a>
+        <div class="col-3 d-flex justify-content-start">
+            <a href="#" class="mx-md-2"><img class="img-fluid" src="img/Platform=Discord, Color=Negative.png" alt="discord link icon"></a>
+            <a href="#" class="mx-md-2"><img class="img-fluid" src="img/Platform=X (Twitter), Color=Negative.png" alt="x link icon"></a>
         </div>
         <div class="col-3 d-flex justify-content-center">
             <a href="#"><small class="text-light text-opacity-50">Contact</small></a>
         </div>
         <div class="col-3 d-flex justify-content-center">
-            <a href="#"><small class="text-light text-opacity-50">Mentions Légales</small></a>
+            <a href="./legals.html"><small class="text-light text-opacity-50">Mentions Légales</small></a>
         </div>
-        <div class="col-3 d-flex justify-content-center">
+        <div class="col-3 d-flex justify-content-end">
             <a href="#"><strong class="text-light">Join us</strong></a>
         </div>
     </footer>

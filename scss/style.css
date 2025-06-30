@@ -12015,6 +12015,9 @@ textarea.form-control-lg {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Jura", sans-serif;
+  font-weight: bold;
+  margin: 1em 0 !important;
+  color: #FFCA2C;
 }
 
 .paladin {
@@ -12085,5 +12088,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 footer {
+  position: relative;
   bottom: 0;
+}
+
+body {
+  height: screen;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

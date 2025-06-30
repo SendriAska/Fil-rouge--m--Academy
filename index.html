@@ -12,7 +12,7 @@
 <body class="bg-secondary">
   <header>
     <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
-      <div class="container-fluid">
+      <div class="container-fluid justify-content-around">
         <a class="navbar-brand" href="./index.html"><img src="./img/Logo.png" alt="m+ academy logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,22 +42,22 @@
     <img class="w-100" src="./img/Bandeau.png" alt="bandeau illustration de trois classes m+ academy">
   </header>
 
-  <main class="container w-lg-75 d-flex flex-column align-items-center">
+  <main class="container w-lg-75 d-flex flex-column align-items-center rounded bg-primary">
 
-    <section class="container d-flex flex-column my-3 py-3 bg-primary rounded">
-      <h2 class="text-center text-light">Trending</h2>
+    <section class="container d-flex flex-column my-3 py-3 bg-secondary rounded">
+      <h2 class="text-center">Trending</h2>
 
       <div class="row justify-content-around">
 
-        <div class="card bg-secondary py-2 my-2 col-10 col-lg-3">
+        <div class="card bg-primary py-2 my-2 col-10 col-lg-3">
           <img src="./img/Dwarf-shaman-portrait-1 1.png" class="card-img-top w-100" alt="illustration de chaman nain">
           <div class="card-body text-light">
             <h5>Last update:</h5>
-            <p class="card-text">Les derniers changements du moine pour le prochain patch sont annoncés ! <br><a
+            <p class="card-text">Les derniers changements du chaman pour le prochain patch sont annoncés ! <br><a
                 class="text-warning" href="#">En savoir plus...</a></p>
           </div>
         </div>
-        <div class="card bg-secondary py-2 my-2 col-10 col-lg-3">
+        <div class="card bg-primary py-2 my-2 col-10 col-lg-3">
           <img src="./img/priest 1.png" class="card-img-top w-100" alt="illustration de prêtre Humaine">
           <div class="card-body text-light">
             <h5>Mandatory Maystine</h5>
@@ -65,7 +65,7 @@
                 class="text-warning" href="#">Découvrir...</a></p>
           </div>
         </div>
-        <div class="card bg-secondary py-2 my-2 col-10 col-lg-3">
+        <div class="card bg-primary py-2 my-2 col-10 col-lg-3">
           <img src="./img/monk 1.png" class="card-img-top w-100" alt="illustration de moine Pandaren">
           <div class="card-body text-light">
             <h5>Last update:</h5>
@@ -76,10 +76,10 @@
       </div>
     </section>
 
-    <section class="container row justify-content-around bg-primary rounded my-3 py-3">
-      <div id="homeCoach" class="col-sm-10 col-lg-4 row justify-content-center">
-        <h2 class="text-center text-light">Coachs</h2>
-        <div class="card mb-3 bg-secondary text-light col-sm-10">
+    <section class="container row justify-content-around rounded my-3 py-3">
+      <div id="homeCoach" class="col-sm-10 col-lg-4 row justify-content-center bg-secondary rounded">
+        <h2 class="text-center">Coachs</h2>
+        <div class="card mb-3 bg-primary text-light col-sm-10">
           <div class="row g-0">
             <div class="col-6 align-self-center">
               <img src="img/image 2.png" class="img-fluid" alt="photo de profil de Sendri">
@@ -93,7 +93,7 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3 bg-secondary text-light col-sm-10">
+        <div class="card mb-3 bg-primary text-light col-sm-10">
           <div class="row g-0">
             <div class="col-6 align-self-center">
               <img src="img/image 1.png" class="w-100" alt="photo de profil de Slogor">
@@ -109,8 +109,8 @@
         </div>
       </div>
 
-      <div id="homeGuide" class="col-sm-11 col-lg-7 row mt-5 mt-lg-0">
-        <h2 class="text-center text-light">Guides</h2>
+      <div id="homeGuide" class="col-sm-11 col-lg-7 row mt-5 mt-lg-0 bg-secondary rounded">
+        <h2 class="text-center">Guides</h2>
         <div class="text-light">
           <img src="img/Cinderbrew_Meadery_loading_screen.jpg"
             class="w-50 float-start position-relative me-3 pt-2 pt-lg-1" alt="loading screen hydromellerie">
@@ -133,17 +133,17 @@
   </main>
 
   <footer class="row container-fluid align-items-center m-2 ">
-        <div class="col-3 d-flex justify-content-center">
-            <a href="#" class="mx-2"><img class="img-fluid" src="img/Platform=Discord, Color=Negative.png" alt="discord link icon"></a>
-            <a href="#" class="mx-2"><img class="img-fluid" src="img/Platform=X (Twitter), Color=Negative.png" alt="x link icon"></a>
+        <div class="col-3 d-flex justify-content-start">
+            <a href="#" class="mx-md-2"><img class="img-fluid" src="img/Platform=Discord, Color=Negative.png" alt="discord link icon"></a>
+            <a href="#" class="mx-md-2"><img class="img-fluid" src="img/Platform=X (Twitter), Color=Negative.png" alt="x link icon"></a>
         </div>
         <div class="col-3 d-flex justify-content-center">
             <a href="#"><small class="text-light text-opacity-50">Contact</small></a>
         </div>
         <div class="col-3 d-flex justify-content-center">
-            <a href="#"><small class="text-light text-opacity-50">Mentions Légales</small></a>
+            <a href="./legals.html"><small class="text-light text-opacity-50">Mentions Légales</small></a>
         </div>
-        <div class="col-3 d-flex justify-content-center">
+        <div class="col-3 d-flex justify-content-end">
             <a href="#"><strong class="text-light">Join us</strong></a>
         </div>
     </footer>
